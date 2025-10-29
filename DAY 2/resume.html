@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        *{box-sizing: border-box; margin: 0;padding: 0}
+        body{
+            font-family:Arial;
+            color: #222;
+            background-color: #f6f5fc;
+            padding:20px;
+        }
+        .card{
+            background: #dfec31f8;
+            max-width:800px;
+            margin: 0 auto;
+            padding:20px;
+            border-radius: 6px;
+        }
+        .row{
+            display:flex ;
+            gap:20px;     
+          }
+        .col-left{
+            width: 250px;
+        }
+        .photo{
+            width: 100px;
+            height: 100px;
+            background-color: #effd23;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            background: url(images.jpeg )center/cover;
+            animation: x 5s linear infinite;
+        }
+        @keyframes x{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    
+        
+    
+        .name{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 4px;    
+        }
+        .name:hover{
+            color: aqua;
+        }
+        .title{
+            
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .contact p {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 6px;
+             
+        }
+        h2{
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #444;
+           
+        }
+        .muted{
+            color: #444;
+            font-size: 14px;
+        }
+        ul{
+            list-style-type: none;
+            margin-left: 18px;
+        }
+        li{
+            margin-bottom: 6px;
+        }
+        @media (max-width:650px){
+            .row{
+                flex-direction: column;
+            }
+            .col-left{width: auto;}
+
+            .photo{width: 80px;}
+        }
+
+    </style>
+</head>
+<body>
+    <article class="card">
+        <div class="row">
+          <!---left column contact,skills,educations-->
+        <aside class="col-left">
+        <div class="photo"></div>
+        <div class="name">Soumya Saha</div>
+        <div class="title">Full Stack Developer</div>
+    <section class="contact">
+        <h2>contact</h2>
+        <p>Email:soumyasaha205@gmail.com</p>
+         <p>phone:+91  7687975044</p>
+          <p>location:kolkata,india</p>
+    </section>
+    <section>
+        <h2>Skills</h2>
+        <p class="muted">C,Python,HTML</p>
+    </section>
+    <section>
+        <h2>education</h2>
+        <p class="muted">10th pass-2022,12th pass-2024</p>
+    </section>
+        </aside>
+
+        <main class="col-right">
+        <section>
+            <h2>Summery</h2>
+            <p class="muted">my name is Soumya Saha</p>
+
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <div>
+                <h3 style="margin-top: 10px;">SIH Competition</h3>
+                <p class="muted" style="margin-bottom: 5px;">august 2025 | Kolkata</p>
+                 <ul>
+                    <li>Biult responsive ui with react js---</li>
+                            <li>Biult responsive ui with react js---</li>
+                 </ul>
+            </div>
+            <div>
+                <h3>ardent Computech:Full stack Developer</h3>
+                <p class="muted">september 2025 | Kolkata</p>
+                 <ul>
+                    <li>Built major project with proper backend </li>
+                            <li>Block chain provide transparency to farmer and consumer</li>
+                 </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div>
+                
+                 <ul>
+                    <li><b>Net banking system:</b>UCO bank</li>
+                            <li><b>E-bike sydtem:</b>Bike Company Relevant</li>
+                 </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Cirtifications</h2>
+            <div>
+                
+                 <ul>
+                    <li>cirtificate name:</li>
+                    <li>circificate name:</li>
+                 </ul>
+            </div>
+        </section>
+
+    </main>
+        </div>
+
+    </article>
+
+    
+</body>
+</html>
